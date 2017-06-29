@@ -1,0 +1,13 @@
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+// usage
+// .myColorText {color: tint($color-primary,15);}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// usage
+// .myColorText {color: shade($color-primary,15);}
